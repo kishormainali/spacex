@@ -2,15 +2,51 @@
 
 project to demonstrate SpaceX Launches
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+> If **lcov** is not installed on your system install using `brew install lcov` on MacOS systems
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+for more on lcov please visit https://github.com/linux-test-project/lcov
+
+## Packages Used
+
+- **flutter_bloc** as state management
+- **auto_route** as routing
+- **get_it** as dependency injection
+- **injectable** as code generation for get_it
+- **dio** for http requests
+- **freezed** and **json_serializable** for model classes and states
+- **fpdart** for functional programming
+- **cached_network_image** for render network images
+
+## Setting up Project
+
+- clone project using https://github.com/kishormainali/spacex.git
+- run  `flutter pub get`
+- run `dart run build_runner build -d`
+
+
+# Run project
+- run using `flutter run` or IDE's default run configurations 
+
+
+# Run Tests
+- Generate `coverage/lcov.info` file using `flutter test --coverage`
+
+- Generate HTML report using `genhtml coverage/lcov.info -o coverage/html`
+
+
+- Open the report using `open coverage/html/index.html`
+
+- if you want to run test without coverage run `flutter test` on project root
+
+# Screenshots
+
+| ![Launces](/resources/list.png) | ![Details](/resources/details.png) |
+|-|-|
+
+
+# Disclaimer
+Author and app is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Space Exploration Technologies Corp (SpaceX), or any of its subsidiaries or its affiliates. The names SpaceX as well as related names, marks, emblems and images are registered trademarks of their respective owners. This is not an official SpaceX app.
