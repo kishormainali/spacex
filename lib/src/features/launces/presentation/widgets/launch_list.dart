@@ -38,7 +38,13 @@ class LaunchList extends StatelessWidget {
                   error: (message) => SliverFillRemaining(
                     fillOverscroll: false,
                     child: Center(
-                      child: Text(message),
+                      child: Text(
+                        message,
+                        style: const TextStyle(
+                          fontSize: 15,
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
                   ),
                   success: (launches, isFetching) {

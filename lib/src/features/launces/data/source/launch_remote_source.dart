@@ -93,7 +93,7 @@ class LaunchRemoteSourceImpl implements LaunchRemoteSource {
       }
     } on DioException catch (dioError) {
       return switch (dioError.type) {
-        DioExceptionType.connectionError => throw NetworkException(),
+        DioExceptionType.connectionError => throw const NetworkException(),
         _ => throw ServerException(message: dioError.message ?? 'Something went wrong'),
       };
     } catch (e, stackTrace) {

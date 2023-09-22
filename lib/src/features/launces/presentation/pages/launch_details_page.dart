@@ -31,9 +31,15 @@ class LaunchDetailsPage extends StatelessWidget {
         body: BlocBuilder<LaunchDetailCubit, LaunchDetailState>(
           builder: (context, state) {
             return state.maybeWhen(
-              orElse: () => Skeletonizer(child: _LaunchDetails(launch: LaunchDetailModel.fake())),
+              orElse: () => Skeletonizer(
+                  child: _LaunchDetails(
+                launch: LaunchDetailModel.fake(),
+              )),
               error: (message) => Center(
-                child: Text(message),
+                child: Text(
+                  message,
+                  style: const TextStyle(fontSize: 14, color: Colors.white),
+                ),
               ),
               success: (launch) {
                 return _LaunchDetails(launch: launch);
