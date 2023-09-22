@@ -1,6 +1,6 @@
 # spacex
 
-A new Flutter project.
+project to demonstrate SpaceX Launches
 
 ## Getting Started
 
