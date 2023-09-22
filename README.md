@@ -4,11 +4,15 @@ project to demonstrate SpaceX Launches
 
 
 ## Prerequisites
+- lcov
+- flutter 3.13.4
+- dart 3.1.2
 
-
-> If **lcov** is not installed on your system install using `brew install lcov` on MacOS systems
+ If **lcov** is not installed on your system install using `brew install lcov` on MacOS systems
 
 for more on lcov please visit https://github.com/linux-test-project/lcov
+
+for more on flutter please visit https://flutter.dev
 
 ## Packages Used
 
