@@ -18,7 +18,7 @@ class LaunchDetailModel with _$LaunchDetailModel {
     required String id,
     required String name,
     required String dateLocal,
-    required String details,
+    @Default('N/A') String details,
     @Default(false) bool success,
     @Default(false) bool upcoming,
     required LaunchLinkModel links,
