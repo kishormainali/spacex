@@ -37,6 +37,7 @@ void bootstrap() {
   );
 }
 
+/// show error and  stack trace in case of error
 class _ErrorApp extends StatelessWidget {
   const _ErrorApp({
     required this.error,

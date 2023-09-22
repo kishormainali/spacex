@@ -25,6 +25,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       builder: (context, child) => GestureDetector(
         onTap: () {
+          /// remove any keyboard appearing on screen by tapping outside
           FocusManager.instance.primaryFocus?.unfocus();
         },
         child: child!,
