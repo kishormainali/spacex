@@ -14,16 +14,16 @@ The project uses clean architecture and test driven development for development 
 
 
 ## Prerequisites
-- lcov
-- flutter 3.13.4
-- dart 3.1.2
+- [lcov](https://github.com/linux-test-project/lcov)
+- [flutter 3.13.4](https://flutter.dev)
+- [dart 3.1.2](https://dart.dev)
 
 ### Install lcov 
 ```sh
-    brew install lcov
+brew install lcov
 ```
 
-> As we are using macOS for development environment, installation of lcov is different on other operating system. please visit https://github.com/linux-test-project/lcov for more info on lcov.
+> As we are using macOS for development, installation of lcov is different on other operating system. please visit https://github.com/linux-test-project/lcov for more info on lcov.
 
 for more on flutter please visit https://flutter.dev
 
@@ -43,18 +43,18 @@ for more on flutter please visit https://flutter.dev
 First, clone the project with `git clone` command or download the zip file
 
 ```sh
-    git clone https://github.com/kishormainali/spacex.git
+git clone https://github.com/kishormainali/spacex.git
 ```
 
 Run, `flutter pub get` to install dependencies
 ```sh
-    flutter pub get
+flutter pub get
 ```
 
 Run, `build_runner` to generate code for models, dependency injections and bloc states
 
 ```sh
-    dart run build_runner build -d
+dart run build_runner build -d
 ```
 
 
@@ -62,7 +62,7 @@ Run, `build_runner` to generate code for models, dependency injections and bloc 
 - [Download and Install](#Download-and-Install)
 - To run project locally you can use IDE's run button or you can run using `flutter run` command.
 ```sh
-    flutter run
+flutter run
 ```
 
 # Install Using APK
