@@ -17,6 +17,8 @@ The project uses clean architecture and test driven development for development 
 - [lcov](https://github.com/linux-test-project/lcov)
 - [flutter 3.13.4](https://flutter.dev)
 - [dart 3.1.2](https://dart.dev)
+- [cocoapods 1.13.0](https://cocoapods.org/)
+
 
 ### Install lcov 
 ```sh
@@ -24,6 +26,12 @@ brew install lcov
 ```
 
 > As we are using macOS for development, installation of lcov is different on other operating system. please visit https://github.com/linux-test-project/lcov for more info on lcov.
+
+### Install cocoapods
+```sh
+sudo gem install cocoapods
+```
+> As we are using XCode 15 for development, it requires latest version of cocoapods to run app on ios simulator please make sure you system has version `1.13.0` of cocoapods
 
 for more on flutter please visit https://flutter.dev
 
